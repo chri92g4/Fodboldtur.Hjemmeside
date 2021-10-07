@@ -1,2 +1,2 @@
 # fodboldtur 
-kregs like big [cocks](https://dicks.com)
+kregs like big .... La vær.
