@@ -1,2 +1,3 @@
-# fodboldtur 
-kregs like big [cocks](https://dicks.com)
+# fodboldtur
+
+### dette er vores test readme
