@@ -8,4 +8,4 @@
 ### Her er vores trello, og vores to do plan
 [link til Trello](https://trello.com/b/13VpV6lW/fodboldtur)
 
-![alt text](assets/img/UML.png)
+![](assets/img/UML.png)
