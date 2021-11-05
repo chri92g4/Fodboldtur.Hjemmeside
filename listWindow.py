@@ -1,7 +1,7 @@
 # importing tkinter module
 from tkinter import *
 from tkinter.ttk import *
-from PIL import ImageTk,Image
+#from PIL import ImageTk,Image
 
 
 class listWindowClass:
@@ -13,7 +13,7 @@ class listWindowClass:
 
         Label(self.listWindow, text="Liste over indbetalinger.. eller.. noget der ligner en cylinder").pack()
 
-        img = ImageTk.PhotoImage(Image.open("assets/img/cyl.png"))
-        panel = Label(self.listWindow, image=img)
-        panel.image = img
-        panel.pack(side="bottom", fill="both", expand="yes")
+ #       img = ImageTk.PhotoImage(Image.open("assets/img/cyl.png"))
+ #       panel = Label(self.listWindow, image=img)
+ #       panel.image = img
+ #       panel.pack(side="bottom", fill="both", expand="yes")
