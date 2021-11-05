@@ -1,17 +1,32 @@
 # importing tkinter module
+import pickle
 from tkinter import *
-from tkinter.ttk import *
+from tkinter.ttk import * #progressbar
 
 from listWindow import listWindowClass
 from payWindow import payWindowClass
 from worstWindow import worstWindowClass
 
+filename = 'betalinger.pk'
+
 class mainWindow:
     def __init__(self):
-        self.total = 1200
+        self.fodboldtur = {}
+        infile = open(filename, 'rb')
+        self.fodboldtur = pickle.load(infile)
+        infile.close()
+
+        print(self.fodboldtur)
+        Sum = 0  # definerer sum som en int
+        for key in self.fodboldtur.keys():  # ber programmet om at sætte beløb som en key som jeg kan definerer senere
+            Sum += self.fodboldtur[key]  # tilføjer beløbne en efter en og ber programmet tjekke om der er nyt beløb
+        print(Sum - 4500,
+              "kroner")  # ber programmet printe den fulde sum -4500 så brugeren ved hvor meget der mangler i alt
+
+        self.total = Sum
         self.target = 4500
-        # creating tkinter window
         self.root = Tk()
+
 
         #TEXT
 
@@ -47,3 +62,7 @@ class mainWindow:
 
 if __name__ == '__main__':
     main = mainWindow()
+
+infile = open(filename,'rb')
+fodboldtur = pickle.load(infile)
+infile.close()
