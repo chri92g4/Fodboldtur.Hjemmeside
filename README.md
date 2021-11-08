@@ -7,6 +7,7 @@
 
 ### Her er vores trello, og vores to do plan
 [link til Trello](https://trello.com/b/13VpV6lW/fodboldtur)
+### vi har struktureret vores classes over hvordan vi vil have den ser ud.
 
 [UML af vores kode](assets/img/UML.png)
 
