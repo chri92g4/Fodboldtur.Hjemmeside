@@ -50,6 +50,17 @@ class payWindowClass:
             messagebox.showerror(parent=self.payWindow , title="Beløb fejl!", message="Prøv igen.\nKun hele tal!")
             return
 
+        if self.valgtnavn.get() == "Vælg navn":
+            messagebox.showerror(parent=self.payWindow, title="Navne fejl!", message="Prøv igen.\nVælg venligst et navn i dropdown:))")
+            return
+
+        #update dict
+        self.master.fodboldtur[self.valgtnavn.get()]+=amount
+        print(self.master.fodboldtur)
+
+        #refresh sum
+
+
         self.master.total += amount
         self.master.progressLabelText.set(f"Indsamlet: {self.master.total} af {self.master.target} kroner:")
         print(f"Indsamlet: {self.master.total} af {self.master.target} kroner!")
