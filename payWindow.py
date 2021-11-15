@@ -28,8 +28,17 @@ class payWindowClass:
         self.money = Entry(self.payWindow)
         self.money.pack()
 
-        self.button = Button(self.payWindow, text="betal", command= self.addMoney)
+        self.button = Button(self.payWindow, text="betal", command= self.selectname)
         self.button.pack()
+
+    def selectname(self):
+
+        if self.money.get() not in fodboldtur.keys():
+                messagebox.showerror(parent=self.payWindow , title="Fejl med navn!", message="Prøv igen.\nTjek venligst navn er korreke!")
+        else:
+            pass
+
+
 
     def addMoney(self):
         try:
