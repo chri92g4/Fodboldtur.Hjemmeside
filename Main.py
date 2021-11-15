@@ -62,7 +62,3 @@ class mainWindow:
 
 if __name__ == '__main__':
     main = mainWindow()
-
-infile = open(filename,'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
