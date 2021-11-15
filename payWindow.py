@@ -11,12 +11,14 @@ class payWindowClass:
     def __init__(self, master):
 
 
-
-
         self.master = master #reference til main window objektet
         self.payWindow = Toplevel(self.master.root)
         self.payWindow.title("Pay Window")
         self.payWindow.geometry("300x500")
+
+        self.valgtnavn = StringVar(self.payWindow)
+        self.valgtnavn.set("Vælg navn")
+
 
         Label(self.payWindow,
               text="Hvem skal betale").pack()
@@ -25,10 +27,11 @@ class payWindowClass:
         self.money = Entry(self.payWindow)
         self.money.pack()
 
-        self.w = OptionMenu(self.payWindow, *self.master.fodboldtur.keys())
+        self.namesList=list(self.master.fodboldtur.keys())
+        self.w = OptionMenu(self.payWindow, self.valgtnavn, *self.namesList )
         self.w.pack()
 
-        self.button = Button(self.payWindow, text="betal", command= self.selectname)
+        self.button = Button(self.payWindow, text="betal", command= self.addMoney)
         self.button.pack()
 
     def selectname(self):
