@@ -16,7 +16,7 @@ class listWindowClass:
 
         for i in range(len(self.master.fodboldtur.keys())):  # Rows
             for j in range(2):  # Columns
-                b = Tkinter.Label(self.table_values,bd=10,relief="groove", text="", width=15)
+                b = Tkinter.Label(self.table_values,bd=10,relief="solid", text="", width=15)
                 b.grid(row=i, column=j)
 
                 if j == 0: #så ved vi at vi er i første søjle og det er Str(keys.navne)

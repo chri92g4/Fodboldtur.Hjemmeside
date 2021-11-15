@@ -10,11 +10,18 @@ from worstWindow import worstWindowClass
 filename = 'betalinger.pk'
 
 class mainWindow:
+
     def __init__(self):
         self.fodboldtur = {}
         infile = open(filename, 'rb')
         self.fodboldtur = pickle.load(infile)
         infile.close()
+
+        def afslut():  # giver afslut en funktion som man kan køre i koden
+            outfile = open(filename, 'wb')  # python åbner filen
+            pickle.dump(self.fodboldtur, outfile)  # python gemmer filen
+            outfile.close()  # python lukker filen
+            print("Programmet er afsluttet!")
 
         print(self.fodboldtur)
         Sum = 0  # definerer sum som en int
@@ -59,6 +66,8 @@ class mainWindow:
 
         # infinite loop
         mainloop()
+
+        afslut()
 
 if __name__ == '__main__':
     main = mainWindow()
