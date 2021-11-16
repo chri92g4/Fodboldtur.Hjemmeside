@@ -20,7 +20,7 @@ class listWindowClass:
                 b.grid(row=i, column=j)
 
                 if j == 0: #så ved vi at vi er i første søjle og det er Str(keys.navne)
-                    b.config(text=list(sorted(self.master.fodboldtur.keys()))[i])
+                    b.config(text=list(self.master.fodboldtur.keys())[i])
 
                 else:
                     b.config(text=str(self.master.fodboldtur[list(self.master.fodboldtur.keys())[i]]))
