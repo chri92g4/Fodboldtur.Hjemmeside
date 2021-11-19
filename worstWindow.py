@@ -1,20 +1,31 @@
-# importing tkinter module
-import pickle
 from tkinter import *
-
-filename = 'betalinger.pk'
+from PIL import ImageTk,Image #image stuff - install package: Pillow
+import tkinter as Tkinter
+import random
 
 class worstWindowClass:
     def __init__(self, master):
         self.master = master #reference til main window objektet
-        self.worstWindow = Toplevel(self.master.root)
-        self.worstWindow.title("Bottom 3")
-        self.worstWindow.geometry("200x200")
-        self.fodboldtur = {}
-        from operator import itemgetter
-        #Sidsteplads = sorted(fodboldtur.items(), key=itemgetter(1))
-        #Label(self.worstWindow, text="De værste betalere").pack()
+        self.listWindow = Toplevel(self.master.root)
 
-infile = open(filename,'rb')
-fodboldtur = pickle.load(infile)
-infile.close()
+
+        self.table_values = Tkinter.LabelFrame(self.listWindow, text="Liste", borderwidth=10, relief=Tkinter.GROOVE, padx=10,
+                                               pady=10)
+        self.table_values.grid(row=1, column=0, padx=20, pady=20)
+
+        for i in range(len(self.master.fodboldtur.keys())):  # Rows
+            for j in range(2):  # Columns
+                b = Tkinter.Entry(self.table_values,bd=10,relief="solid", text="", width=25)
+                b.grid(row=i, column=j)
+
+                if j == 0: #så ved vi at vi er i første søjle og det er Str(keys.navne)
+                    b.config(list(self.master.fodboldtur.keys())[i])
+
+                else:
+                    b.config(str(self.master.fodboldtur[list(self.master.fodboldtur.keys())[i]]))
+
+
+
+    def dataReadout(self, frame):
+        # returns Dict of row and column
+        pass
