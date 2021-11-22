@@ -2,6 +2,8 @@ from tkinter import *
 from PIL import ImageTk,Image #image stuff - install package: Pillow
 import tkinter as Tkinter
 import random
+from operator import itemgetter  # python importere "itemgetter" fra operator som er den sorterede dict
+
 
 class worstWindowClass:
     def __init__(self, master):
@@ -13,16 +15,16 @@ class worstWindowClass:
                                                pady=10)
         self.table_values.grid(row=1, column=0, padx=20, pady=20)
 
-        for i in range(len(self.master.fodboldtur.keys())):  # Rows
+
+        sidsteplads = sorted(self.master.fodboldtur.items(), key=itemgetter(1))[0:3] #giver "sidsteplads" en defination som jeg kan kalde når det skal printes.
+        print(sidsteplads)
+
+        for i in range(len(sidsteplads)):  # Rows
             for j in range(2):  # Columns
-                b = Tkinter.Entry(self.table_values,bd=10,relief="solid", text="", width=25)
+                b = Tkinter.Label(self.table_values,bd=10,relief="solid", text="", width=25)
                 b.grid(row=i, column=j)
 
-                if j == 0: #så ved vi at vi er i første søjle og det er Str(keys.navne)
-                    b.config(list(self.master.fodboldtur.keys())[i])
-
-                else:
-                    b.config(str(self.master.fodboldtur[list(self.master.fodboldtur.keys())[i]]))
+                b.config(text=sidsteplads[i][j])
 
 
 
