@@ -34,14 +34,6 @@ class payWindowClass:
         self.button = Button(self.payWindow, text="betal", command= self.addMoney)
         self.button.pack()
 
-    def selectname(self):
-
-        if self.money.get() not in self.master.fodboldtur.keys():
-                messagebox.showerror(parent=self.payWindow , title="Fejl med navn!", message="Prøv igen.\nTjek venligst navn er korreke!")
-        else:
-            pass
-
-
 
     def addMoney(self):
         try:
@@ -56,7 +48,6 @@ class payWindowClass:
 
         #update dict
         self.master.fodboldtur[self.valgtnavn.get()]+=amount
-        print(self.master.fodboldtur)
 
         #refresh sum
 

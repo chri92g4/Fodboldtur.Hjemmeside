@@ -17,7 +17,6 @@ class worstWindowClass:
 
 
         sidsteplads = sorted(self.master.fodboldtur.items(), key=itemgetter(1))[0:3] #giver "sidsteplads" en defination som jeg kan kalde når det skal printes.
-        print(sidsteplads)
 
         for i in range(len(sidsteplads)):  # Rows
             for j in range(2):  # Columns
