@@ -22,3 +22,4 @@
 ### vi har struktureret vores classes over hvordan vi vil have den ser ud, selvfølig er dette ikke vores endelige produkt for vores klasses, det vores skelet struktur kan man kalde den.
 [UML af vores kode](assets/img/UML.png)
 
+# test af programmet
