@@ -1,6 +1,8 @@
 # fodboldtur 
 
-### vi er i gang med at lave et projekt hvor vi skal få vores kode til at ligne vores tidligere projekt "fodboldtur" 
+### Vi er i gang med at lave et projekt hvor vi skal få vores kode til at ligne vores tidligere projekt "fodboldtur" det vil sige at det kode som vi fik til at virke i forboldtur vil vi prøve at implementere i fodboldtur hjemmesiden.
+
+### 
 
 ### dette er vores test readme
 [Hjemmeside Skitse](assets/img/Git.jpg)
