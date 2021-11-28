@@ -23,3 +23,5 @@
 [UML af vores kode](assets/img/UML.png)
 
 # test af programmet
+
+## vores program køre meget fint der er ikke rigtigt nogle setback, men vi ville meget gerne havde haft nogle flere funktioner med som man se i vores første [flowchart1] dermed er vi stadig glade for det udfald vi har fået, vores kode køre som den skal den har vores priotet funktioner med og det fungere som det skal. i forhold til usability er det et meget enkelt program for brugeren at bruge, vi kørte en test med en anden klasse kamarat for at teste deres navigation i programmet og det ser ud til at det var nemt for dem at finde rundt. vi konstantere hermed at det var en success.
