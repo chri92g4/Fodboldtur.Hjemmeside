@@ -8,10 +8,12 @@
 ### dette er vores test readme
 [Hjemmeside Skitse](assets/img/Git.jpg)
 
-### her er vores første flowchart over hvad vi håber at få med. 
-[flowchart](assets/img/Flowchart.betaling.png)
+### her er vores første flowchart over hvad vi håber at få med i koden, men hvad er det et flowchart hjælper med? ved at få lavet nogle flowcharts får vi et meget tæt billede af hvad vores kode skal køre igennem og hvilken rekkefølge tingende skal køre i, dermed har man også lidt et overblik over hvilken elementer og klasser man skal få lavet.
+[flowchart1]
+### vores anden flow 
+[flowchart2](assets/img/Flowchart.betaling.png)
 ### her er så det endelige flowchart som er baseret på det færdige kode produkt.
-[flowchart]
+[flowchart3]
 
 
 ### Her er vores trello, og vores to do plan
