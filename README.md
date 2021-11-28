@@ -8,8 +8,11 @@
 ### dette er vores test readme
 [Hjemmeside Skitse](assets/img/Git.jpg)
 
-### her er vores flowchart
+### her er vores første flowchart over hvad vi håber at få med. 
 [flowchart](assets/img/Flowchart.betaling.png)
+### her er så det endelige flowchart som er baseret på det færdige kode produkt.
+[flowchart]
+
 
 ### Her er vores trello, og vores to do plan
 [link til Trello](https://trello.com/b/13VpV6lW/fodboldtur)
