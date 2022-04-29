@@ -9,6 +9,13 @@ from worstWindow import worstWindowClass
 
 filename = 'betalinger.pk'
 
+#john regner, john ser alt
+def john():
+    pass
+
+
+
+
 class mainWindow:
 
     def __init__(self):
